@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac-srv
+spec:
+  selector:
+    app: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9029
+  type: ClusterIP

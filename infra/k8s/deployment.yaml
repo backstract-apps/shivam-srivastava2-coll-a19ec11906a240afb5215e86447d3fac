@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac-depl
+  labels:
+    app: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac
+  template:
+    metadata:
+      labels:
+        app: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac
+    spec:
+      containers:
+        - name: shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac
+          image: 216084506783.dkr.ecr.ap-south-1.amazonaws.com/backstract_apps:shivam-srivastava2-coll-a19ec11906a240afb5215e86447d3fac
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9029
